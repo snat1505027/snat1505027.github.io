@@ -14,7 +14,7 @@ a { color:inherit; }
 #site-nav a:hover { color:var(--teal); }
 .header-cta { border:1px solid var(--ink); border-radius:999px; padding:.65rem 1rem; }
 .menu-button { display:none; }
-.hero { max-width:var(--max); min-height:680px; margin:auto; padding:5rem 2rem 4.5rem; display:grid; grid-template-columns:minmax(0,1fr) 240px; gap:4rem; align-items:center; }
+.hero { max-width:var(--max); min-height:680px; margin:auto; padding:5rem 2rem 4.5rem; display:grid; grid-template-columns:1.25fr .75fr; gap:6rem; align-items:center; }
 .eyebrow,.section-kicker { margin:0 0 1.2rem; color:var(--teal); font-size:.75rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
 h1,h2,h3 { font-family:"Manrope",sans-serif; letter-spacing:-.035em; }
 h1 { max-width:780px; margin:0; font-size:20px; line-height:1.15; font-weight:600; }
@@ -31,8 +31,8 @@ h1 em { color:var(--teal); font-style:normal; }
 .button.secondary { border:1px solid var(--line); }
 .social-links { margin-top:2.5rem; gap:1.5rem; }
 .social-links a { color:var(--muted); font-size:.82rem; text-underline-offset:.2rem; }
-.portrait-wrap { position:relative; width:100%; max-width:240px; margin:0; justify-self:end; }
-.portrait-wrap img { display:block; width:100%; aspect-ratio:4/5; object-fit:cover; object-position:center; position:relative; z-index:1; filter:saturate(.82) contrast(1.04); }
+.portrait-wrap { position:relative; width:100%; margin:0; justify-self:end; }
+.portrait-wrap img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; object-position:center; position:relative; z-index:1; filter:saturate(.82) contrast(1.04); }
 .portrait-accent { position:absolute; inset:-1rem 1rem 1rem -1rem; background:var(--lime); }
 .portrait-wrap figcaption { position:relative; z-index:2; display:flex; justify-content:space-between; gap:1rem; padding:.8rem 0; font-size:.72rem; color:var(--muted); }
 .sample-switcher { display:flex; justify-content:flex-end; gap:.35rem; margin:0; }
@@ -93,7 +93,7 @@ footer p:last-child { text-align:right; color:var(--muted); }
   #site-nav.open { display:grid; }
   .header-cta { display:none; }
   .hero { min-height:auto; padding:4rem 1.2rem; grid-template-columns:1fr; gap:4rem; }
-  .portrait-wrap { max-width:220px; justify-self:start; }
+  .portrait-wrap { max-width:440px; justify-self:start; }
   .research-strip { padding:4rem 1.2rem; }
   .focus-grid { grid-template-columns:1fr; }
   .focus-grid article+article { padding-left:0; border-left:0; }
