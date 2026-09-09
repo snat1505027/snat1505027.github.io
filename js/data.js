@@ -21,7 +21,7 @@ export const publications = [
 export const experience = [
   { range:'Jun 2026 — Present', role:'Research Scientist', org:'NVIDIA', summary:'Enhancing the reasoning ability of large generative models during pretraining.' },
   { range:'May 2024 — May 2026', role:'Research Intern', org:'NVIDIA', summary:'Developed pretraining methods to strengthen reasoning in large language models.' },
-  { range:'Fall 2021 — Present', role:'Graduate Research Assistant', org:'Language Technologies Institute, Carnegie Mellon University', summary:'Research spanning social intelligence, cross-lingual retrieval, multimodal question answering, and compositional reasoning.' },
+  { range:'Fall 2021 — May 2026', role:'Graduate Research Assistant', org:'Language Technologies Institute, Carnegie Mellon University', summary:'Research spanning social intelligence, cross-lingual retrieval, multimodal question answering, and compositional reasoning.' },
   { range:'2021 & 2022', role:'Research Intern', org:'Language Technologies Institute, Carnegie Mellon University', summary:'Designed self-supervised social interaction modeling and multimodal QA training and evaluation frameworks.' }
 ];
 
