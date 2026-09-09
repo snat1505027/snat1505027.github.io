@@ -2,15 +2,15 @@
     "name": "Syeda Nahida Akter",
     "short_name": "Syeda Nahida Akter",
     "lang": "en-us",
-    "theme_color": "#2962ff",
-    "background_color": "#2962ff",
+    "theme_color": "#0b1f33",
+    "background_color": "#f5f2ea",
     "icons": [{
-        "src": "/images/icon_hu59acb4572acd5317a20b30b25fb23e48_14905_192x192_fill_lanczos_center_2.png",
+        "src": "/images/icon-192x192.png",
         "sizes": "192x192",
         "type": "image/png"
     }, {
-        "src": "/images/icon_hu59acb4572acd5317a20b30b25fb23e48_14905_512x512_fill_lanczos_center_2.png",
-        "sizes": "512x512",
+        "src": "/images/icon-384x384.png",
+        "sizes": "384x384",
         "type": "image/png"
     }],
     "display": "standalone",
