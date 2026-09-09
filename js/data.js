@@ -26,7 +26,7 @@ export const experience = [
 ];
 
 export const education = [
-  { range:'2023 — 2026', degree:'PhD in Language Technologies', school:'Carnegie Mellon University', detail:'Multimodal question answering, social intelligence modeling, and commonsense reasoning.' },
-  { range:'2021 — 2023', degree:'Master of Language Technologies', school:'Carnegie Mellon University', detail:'QPA 4.00 · Advisor: Professor Eric Nyberg.' },
+  { range:'2023 — 2026', degree:'PhD in Language Technologies', school:'Carnegie Mellon University', detail:'Improving reasoning ability of generative models.' },
+  { range:'2021 — 2023', degree:'Master of Language Technologies', school:'Carnegie Mellon University', detail:'Advisor: Professor Eric Nyberg.' },
   { range:'2016 — 2021', degree:'BSc in Computer Science and Engineering', school:'Bangladesh University of Engineering and Technology', detail:'Geo-distributed machine learning and natural language processing.' }
 ];
