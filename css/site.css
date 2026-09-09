@@ -66,6 +66,9 @@ h1 em { color:var(--teal); font-style:normal; }
 .publication-card h3 a:hover { color:var(--teal); }
 .publication-card p { max-width:850px; margin:0; color:var(--muted); font-size:.85rem; }
 .publication-card strong { color:var(--ink); font-weight:600; }
+.publication-resources { display:flex; flex-wrap:wrap; gap:.45rem; margin-top:.9rem; }
+.publication-resources a { padding:.35rem .6rem; border:1px solid var(--line); border-radius:999px; color:var(--teal); font-size:.72rem; font-weight:700; text-decoration:none; }
+.publication-resources a:hover { color:white; background:var(--teal); border-color:var(--teal); }
 .muted { max-width:none; padding-inline:max(2rem,calc((100vw - var(--max))/2 + 2rem)); background:#e8ebe4; }
 .timeline { margin-top:3rem; }
 .timeline-item { display:grid; grid-template-columns:220px 1fr; gap:2rem; padding:2rem 0; border-bottom:1px solid var(--line); }

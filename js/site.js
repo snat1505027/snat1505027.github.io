@@ -45,6 +45,7 @@ function renderPublications(filter = 'all') {
       <div>
         <h3><a href="${item.url}">${escapeHTML(item.title)} <span aria-hidden="true">↗</span></a></h3>
         <p>${emphasizeName(item.authors)}</p>
+        ${item.resources?.length ? `<div class="publication-resources" aria-label="Additional resources">${item.resources.map((resource) => `<a href="${escapeHTML(resource.url)}">${escapeHTML(resource.label)} <span aria-hidden="true">↗</span></a>`).join('')}</div>` : ''}
       </div>
     </article>`).join('');
   document.querySelector('.publication-count').textContent = `${selected.length} publication${selected.length === 1 ? '' : 's'}`;
