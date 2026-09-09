@@ -28,6 +28,9 @@ h1 em { color:var(--teal); font-style:normal; }
 .button.primary { color:white; background:var(--ink); }
 .button.primary:hover { background:var(--teal); }
 .button.secondary { border:1px solid var(--line); }
+.contact-button { align-items:center; }
+.button-copy { display:grid; gap:.1rem; }
+.button-copy small { color:var(--muted); font-size:.72rem; font-weight:500; }
 .social-links { margin-top:2.5rem; gap:1.5rem; }
 .social-links a { color:var(--muted); font-size:.82rem; text-underline-offset:.2rem; }
 .portrait-wrap { position:relative; width:100%; margin:0; justify-self:end; }
