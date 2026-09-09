@@ -1,5 +1,28 @@
 import { publications, experience, education } from './data.js';
 
+const portraitSamples = [
+  { src:'images/portraits/candidate-1.jpg', position:'50% 58%' },
+  { src:'images/portraits/candidate-2.jpg', position:'50% 56%' },
+  { src:'images/portraits/candidate-3.jpg', position:'50% 52%' },
+  { src:'images/portraits/candidate-4.jpg', position:'50% 52%' },
+  { src:'images/portraits/candidate-5.jpg', position:'67% 48%' }
+];
+
+const requestedPortrait = Number(new URLSearchParams(window.location.search).get('portrait'));
+if (requestedPortrait >= 1 && requestedPortrait <= portraitSamples.length) {
+  const portrait = document.querySelector('#hero-portrait');
+  const sample = portraitSamples[requestedPortrait - 1];
+  portrait.src = sample.src;
+  portrait.style.objectPosition = sample.position;
+  const switcher = document.querySelector('#portrait-samples');
+  switcher.hidden = false;
+  switcher.innerHTML = portraitSamples.map((_, index) => {
+    const number = index + 1;
+    const active = number === requestedPortrait;
+    return `<a href="?portrait=${number}" class="${active ? 'active' : ''}" ${active ? 'aria-current="page"' : ''} aria-label="View portrait sample ${number}">${number}</a>`;
+  }).join('');
+}
+
 const escapeHTML = (value) => value.replace(/[&<>'"]/g, (char) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#39;', '"':'&quot;' })[char]);
 const emphasizeName = (authors) => escapeHTML(authors).replaceAll('Syeda Nahida Akter', '<strong>Syeda Nahida Akter</strong>');
 
