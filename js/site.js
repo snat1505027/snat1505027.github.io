@@ -1,4 +1,4 @@
-import { publications, experience, education } from './data.js';
+import { publications, talks, experience, education } from './data.js';
 
 const portraitSamples = [
   { src:'images/portraits/candidate-1.jpg', position:'50% 58%' },
@@ -61,6 +61,18 @@ controls.addEventListener('click', (event) => {
   });
   renderPublications(button.dataset.filter);
 });
+
+document.querySelector('#talk-list').innerHTML = talks.map((item) => `
+  <article class="talk-card">
+    <div class="video-frame">
+      <iframe src="https://www.youtube-nocookie.com/embed/${item.videoId}" title="${escapeHTML(item.title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="talk-copy">
+      <p>${escapeHTML(item.host)}</p>
+      <h3>${escapeHTML(item.title)}</h3>
+      <a href="${item.url}">Watch on YouTube <span aria-hidden="true">↗</span></a>
+    </div>
+  </article>`).join('');
 
 document.querySelector('#experience-list').innerHTML = experience.map((item) => `
   <article class="timeline-item">

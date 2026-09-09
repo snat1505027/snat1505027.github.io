@@ -18,6 +18,21 @@ export const publications = [
   { year:'2020', category:'other', venue:'ACM SIGKDD 2020', title:'WeightGrad: Geo-Distributed Data Analysis Using Quantization for Faster Convergence and Better Accuracy', authors:'Syeda Nahida Akter, Muhammad Abdullah Adnan', url:'https://dl.acm.org/doi/pdf/10.1145/3394486.3403097' }
 ];
 
+export const talks = [
+  {
+    title:'Front-Loading Reasoning: Why Reasoning Data Belongs in Pretraining',
+    host:'DatologyAI',
+    videoId:'_KJBcdm3-mk',
+    url:'https://www.youtube.com/watch?v=_KJBcdm3-mk'
+  },
+  {
+    title:'Why Your LLM Needs Math to Think Better (EACL 2026)',
+    host:'Women in AI Research (WiAIR)',
+    videoId:'-cPYHmxwN14',
+    url:'https://www.youtube.com/watch?v=-cPYHmxwN14'
+  }
+];
+
 export const experience = [
   { range:'Jun 2026 — Present', role:'Research Scientist', org:'NVIDIA', summary:'Enhancing the reasoning ability of large generative models during pretraining.' },
   { range:'May 2024 — May 2026', role:'Research Intern', org:'NVIDIA', summary:'Developed pretraining methods to strengthen reasoning in large language models.' },
