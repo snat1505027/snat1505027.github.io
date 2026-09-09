@@ -85,6 +85,7 @@ footer p:last-child { text-align:right; color:var(--muted); }
   nav.open { display:grid; }
   .header-cta { display:none; }
   .hero { min-height:auto; padding:4rem 1.2rem; grid-template-columns:1fr; gap:4rem; }
+  .hero h1 { font-size:24.6px; line-height:1.08; }
   .portrait-wrap { max-width:440px; }
   .research-strip { padding:4rem 1.2rem; }
   .focus-grid { grid-template-columns:1fr; }
