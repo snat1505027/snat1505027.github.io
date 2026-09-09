@@ -33,7 +33,6 @@ h1 em { color:var(--teal); font-style:normal; }
 .social-links a { color:var(--muted); font-size:.82rem; text-underline-offset:.2rem; }
 .portrait-wrap { position:relative; width:100%; margin:0; justify-self:end; }
 .portrait-wrap img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; object-position:center; position:relative; z-index:1; filter:saturate(.82) contrast(1.04); }
-.portrait-accent { position:absolute; inset:-1rem 1rem 1rem -1rem; background:var(--lime); }
 .portrait-wrap figcaption { position:relative; z-index:2; display:flex; justify-content:space-between; gap:1rem; padding:.8rem 0; font-size:.72rem; color:var(--muted); }
 .sample-switcher { display:flex; justify-content:flex-end; gap:.35rem; margin:0; }
 .sample-switcher[hidden] { display:none; }

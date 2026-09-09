@@ -2,10 +2,7 @@ import { publications, experience, education } from './data.js';
 
 const portraitSamples = [
   { src:'images/portraits/candidate-1.jpg', position:'50% 58%' },
-  { src:'images/portraits/candidate-2.jpg', position:'50% 56%' },
-  { src:'images/portraits/candidate-3.jpg', position:'50% 52%' },
-  { src:'images/portraits/candidate-4.jpg', position:'50% 52%' },
-  { src:'images/portraits/candidate-5.jpg?v=2', position:'67% 48%' }
+  { src:'images/portraits/candidate-2.jpg', position:'50% 56%' }
 ];
 
 const requestedPortrait = Number(new URLSearchParams(window.location.search).get('portrait'));
