@@ -7,7 +7,7 @@ a { color:inherit; }
 .skip-link { position:fixed; left:1rem; top:-4rem; z-index:20; background:var(--lime); padding:.7rem 1rem; }
 .skip-link:focus { top:1rem; }
 .site-header { min-height:78px; max-width:var(--max); margin:auto; padding:0 2rem; display:flex; align-items:center; gap:2rem; border-bottom:1px solid var(--line); }
-.wordmark { font:700 1.05rem/1 "Manrope",sans-serif; text-decoration:none; letter-spacing:.04em; }
+.wordmark { font:700 clamp(1.2rem,1.7vw,1.45rem)/1.1 "Manrope",sans-serif; text-decoration:none; letter-spacing:.035em; }
 #site-nav { display:flex; gap:1.8rem; margin-left:auto; }
 #site-nav a,.header-cta { font-size:.88rem; font-weight:600; text-decoration:none; }
 #site-nav a:hover { color:var(--teal); }
