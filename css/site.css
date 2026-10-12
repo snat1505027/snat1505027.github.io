@@ -75,6 +75,18 @@ h1 em { color:var(--teal); font-style:normal; }
 .talk-copy p { margin:0 0:.6rem; color:var(--teal); font-size:.72rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; }
 .talk-copy h3 { margin:0 0:1.25rem; font-size:1.2rem; line-height:1.35; }
 .talk-copy a { color:var(--teal); font-size:.8rem; font-weight:700; text-underline-offset:.2rem; }
+.slides-heading { margin:4.5rem 0 0; padding-top:3rem; border-top:1px solid var(--line); }
+.slides-heading .section-kicker { margin-bottom:.65rem; }
+.slides-heading h3 { margin:0; font-size:clamp(1.7rem,3vw,2.4rem); }
+.slide-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; max-width:var(--max); margin:2rem auto 0; }
+.slide-card { overflow:hidden; background:var(--paper); border:1px solid var(--line); }
+.slide-cover { display:block; overflow:hidden; aspect-ratio:16/9; background:var(--ink); }
+.slide-cover img { display:block; width:100%; height:100%; object-fit:cover; transition:transform .25s ease; }
+.slide-cover:hover img { transform:scale(1.015); }
+.slide-copy { padding:1.5rem; }
+.slide-copy p { margin:0 0:.6rem; color:var(--teal); font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+.slide-copy h4 { margin:0 0:1.25rem; font:600 1.1rem/1.4 "Manrope",sans-serif; letter-spacing:-.025em; }
+.slide-copy>a { color:var(--teal); font-size:.8rem; font-weight:700; text-underline-offset:.2rem; }
 .muted { max-width:none; padding-inline:max(2rem,calc((100vw - var(--max))/2 + 2rem)); background:#e8ebe4; }
 .timeline { margin-top:3rem; }
 .timeline-item { display:grid; grid-template-columns:220px 1fr; gap:2rem; padding:2rem 0; border-bottom:1px solid var(--line); }
@@ -114,7 +126,7 @@ footer p:last-child { text-align:right; color:var(--muted); }
   .publication-meta { flex-direction:row; }
   .education-grid { grid-template-columns:1fr; }
   .talks-section { padding-inline:1.2rem; }
-  .talk-grid { grid-template-columns:1fr; }
+  .talk-grid,.slide-grid { grid-template-columns:1fr; }
   .education-card,.education-card+.education-card { padding:1.8rem 0; border-left:0; border-bottom:1px solid var(--line); }
   .education-card h3,.education-card .school { min-height:0; }
   footer { margin:0 1.2rem; padding:2rem 0; grid-template-columns:1fr; gap:.5rem; }

@@ -33,6 +33,23 @@ export const talks = [
   }
 ];
 
+export const thesisSlides = [
+  {
+    kind:'PhD Thesis Defense',
+    date:'April 7, 2026',
+    title:'Bridging Pretraining and Post-Training: Towards Reasoning-Centric Large Language Models',
+    cover:'images/talks/thesis-defense.jpg',
+    url:'files/Syeda_Nahida_Akter_Thesis_Defense.pdf'
+  },
+  {
+    kind:'PhD Thesis Proposal',
+    date:'November 7, 2025',
+    title:'Bridging Pretraining and Post-Training: Towards Reasoning-Centric Large Language Models',
+    cover:'images/talks/thesis-proposal.jpg',
+    url:'files/Syeda_Nahida_Akter_Thesis_Proposal.pdf'
+  }
+];
+
 export const experience = [
   { range:'Jun 2026 — Present', role:'Research Scientist', org:'NVIDIA', summary:'Enhancing the reasoning ability of large generative models during pretraining.' },
   { range:'May 2024 — May 2026', role:'Research Intern', org:'NVIDIA', summary:'Developed pretraining methods to strengthen reasoning in large language models.' },

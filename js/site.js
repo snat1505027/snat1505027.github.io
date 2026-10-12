@@ -1,4 +1,4 @@
-import { publications, talks, experience, education } from './data.js';
+import { publications, talks, thesisSlides, experience, education } from './data.js';
 
 const portraitSamples = [
   { src:'images/portraits/candidate-1.jpg', position:'50% 58%' },
@@ -71,6 +71,18 @@ document.querySelector('#talk-list').innerHTML = talks.map((item) => `
       <p>${escapeHTML(item.host)}</p>
       <h3>${escapeHTML(item.title)}</h3>
       <a href="${item.url}">Watch on YouTube <span aria-hidden="true">↗</span></a>
+    </div>
+  </article>`).join('');
+
+document.querySelector('#thesis-slide-list').innerHTML = thesisSlides.map((item) => `
+  <article class="slide-card">
+    <a class="slide-cover" href="${item.url}" aria-label="View ${escapeHTML(item.kind)} slides">
+      <img src="${item.cover}" alt="Opening slide for ${escapeHTML(item.kind)}" width="1200" height="675" loading="lazy">
+    </a>
+    <div class="slide-copy">
+      <p>${escapeHTML(item.kind)} <span aria-hidden="true">·</span> ${escapeHTML(item.date)}</p>
+      <h4>${escapeHTML(item.title)}</h4>
+      <a href="${item.url}">View slide deck <span aria-hidden="true">↗</span></a>
     </div>
   </article>`).join('');
 
