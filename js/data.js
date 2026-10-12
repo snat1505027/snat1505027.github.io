@@ -38,8 +38,8 @@ export const thesisSlides = [
     kind:'PhD Thesis Defense',
     date:'April 7, 2026',
     title:'Bridging Pretraining and Post-Training: Towards Reasoning-Centric Large Language Models',
-    cover:'images/talks/thesis-defense.jpg',
-    url:'files/Syeda_Nahida_Akter_Thesis_Defense.pdf'
+    cover:'images/talks/thesis-defense.jpg?v=20261012-2',
+    url:'files/Syeda_Nahida_Akter_Thesis_Defense.pdf?v=20261012-2'
   },
   {
     kind:'PhD Thesis Proposal',
